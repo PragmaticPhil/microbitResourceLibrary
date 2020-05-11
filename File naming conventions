@@ -8,7 +8,9 @@ RESERVED RANGES:
 30000-39999:  Full screen images for SSD1306 (so 128x64)
 40000-49999:  Partial (not full) images for SSD1306
 50000-59999:  Fonts
-60000-89999:  Spare
+60000-69999:  Banners (full width SSD)
+70000-79999:  Stripes (full height SSD)
+80000-89999:  Spare
 90000-99999:  Specials.  These are Partials but without dimension data
 
 FILE NAMES:
