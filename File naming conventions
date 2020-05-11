@@ -7,13 +7,18 @@ RESERVED RANGES:
 20000-29999:  Full screen images for SSD1306 (so 128x64)
 30000-39999:  Partial (not full) images for SSD1306
 40000-49999:  Fonts
+50000-89999:  Spare
 90000-99999:  Specials.  These are Partials but without dimension data
 
-NB - the reserved ranges above are PREFIXES.
-... it is acceptable for file names to be 5 or 6 digits long.
+STRING LENGTH OF FILE NAME:
+The reserved ranges above are PREFIXES.
+You would check out a 4-char prefix and reserve it.
+You can then save ANY number of resources using that prefix - it is acceptable for file names to be 5 or 6 digits long (perhaps even 7 if the need arises).
 ... so you could name a file "000000.txt" as well as "0000012"
 ... This allows us to store lots of files in numberical sequence - great for animations
 
 
 DATA FORMAT:
 The resources are designed to be used in MakeCode.
+So they are all .txt files.
+Format specifics vary according to the resource type (which is encoded in the first digit of the file name)
