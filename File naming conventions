@@ -1,0 +1,19 @@
+All resource files must follow the conventions below:
+
+RESERVED RANGES:
+
+00000-09999:  images for the microbit 5x5 LED.
+10000-19999:  String literals
+20000-29999:  Full screen images for SSD1306 (so 128x64)
+30000-39999:  Partial (not full) images for SSD1306
+40000-49999:  Fonts
+90000-99999:  Specials.  These are Partials but without dimension data
+
+NB - the reserved ranges above are PREFIXES.
+... it is acceptable for file names to be 5 or 6 digits long.
+... so you could name a file "000000.txt" as well as "0000012"
+... This allows us to store lots of files in numberical sequence - great for animations
+
+
+DATA FORMAT:
+The resources are designed to be used in MakeCode.
