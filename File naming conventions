@@ -2,14 +2,15 @@ All resource files must follow the conventions below:
 
 RESERVED RANGES:
 
-00000-09999:  reserved
-10000-19999:  images for the microbit 5x5 LED.
+00000-09999:  QR codes
+10000-14999:  images for the microbit 5x5 LED.
+15000-19999:  ASCII - representations of ASCII codes in 5x5
 20000-29999:  String literals
 30000-39999:  Full screen images for SSD1306 (so 128x64)
 40000-49999:  Partial (not full) images for SSD1306
 50000-59999:  Fonts
-60000-69999:  Banners (full width SSD)
-70000-79999:  Stripes (full height SSD)
+60000-69999:  Banners (full width SSD) - 12x128
+70000-79999:  Stripes (full height SSD) - 64x12
 80000-89999:  Spare
 90000-99999:  Specials.  These are Partials but without dimension data
 
